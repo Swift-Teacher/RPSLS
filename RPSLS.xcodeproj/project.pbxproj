@@ -13,10 +13,12 @@
 		EB579BC625F9007D00F4DD79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB579BC425F9007D00F4DD79 /* Main.storyboard */; };
 		EB579BC825F9007D00F4DD79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB579BC725F9007D00F4DD79 /* Assets.xcassets */; };
 		EB579BCB25F9007D00F4DD79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB579BC925F9007D00F4DD79 /* LaunchScreen.storyboard */; };
+		EB579BD525F9028F00F4DD79 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB579BD425F9028F00F4DD79 /* Sign.swift */; };
+		EB579BDA25F9069100F4DD79 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB579BD925F9069100F4DD79 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB579BBB25F9007D00F4DD79 /* RPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB579BBB25F9007D00F4DD79 /* RPSLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPSLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB579BBE25F9007D00F4DD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB579BC025F9007D00F4DD79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EB579BC225F9007D00F4DD79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,9 @@
 		EB579BC725F9007D00F4DD79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB579BCA25F9007D00F4DD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB579BCC25F9007D00F4DD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB579BD325F901C900F4DD79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EB579BD425F9028F00F4DD79 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		EB579BD925F9069100F4DD79 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameState.swift; path = RPSLS/GameState.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +45,8 @@
 		EB579BB225F9007D00F4DD79 = {
 			isa = PBXGroup;
 			children = (
-				EB579BBD25F9007D00F4DD79 /* RPS */,
+				EB579BD325F901C900F4DD79 /* README.md */,
+				EB579BBD25F9007D00F4DD79 /* RPSLS */,
 				EB579BBC25F9007D00F4DD79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +54,41 @@
 		EB579BBC25F9007D00F4DD79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB579BBB25F9007D00F4DD79 /* RPS.app */,
+				EB579BBB25F9007D00F4DD79 /* RPSLS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB579BBD25F9007D00F4DD79 /* RPS */ = {
+		EB579BBD25F9007D00F4DD79 /* RPSLS */ = {
 			isa = PBXGroup;
 			children = (
 				EB579BBE25F9007D00F4DD79 /* AppDelegate.swift */,
 				EB579BC025F9007D00F4DD79 /* SceneDelegate.swift */,
 				EB579BC225F9007D00F4DD79 /* ViewController.swift */,
 				EB579BC425F9007D00F4DD79 /* Main.storyboard */,
+				EB579BD825F902BD00F4DD79 /* Data Models */,
 				EB579BC725F9007D00F4DD79 /* Assets.xcassets */,
 				EB579BC925F9007D00F4DD79 /* LaunchScreen.storyboard */,
 				EB579BCC25F9007D00F4DD79 /* Info.plist */,
 			);
-			path = RPS;
+			path = RPSLS;
+			sourceTree = "<group>";
+		};
+		EB579BD825F902BD00F4DD79 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB579BD425F9028F00F4DD79 /* Sign.swift */,
+				EB579BD925F9069100F4DD79 /* GameState.swift */,
+			);
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB579BBA25F9007D00F4DD79 /* RPS */ = {
+		EB579BBA25F9007D00F4DD79 /* RPSLS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB579BCF25F9007E00F4DD79 /* Build configuration list for PBXNativeTarget "RPS" */;
+			buildConfigurationList = EB579BCF25F9007E00F4DD79 /* Build configuration list for PBXNativeTarget "RPSLS" */;
 			buildPhases = (
 				EB579BB725F9007D00F4DD79 /* Sources */,
 				EB579BB825F9007D00F4DD79 /* Frameworks */,
@@ -82,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = RPS;
+			name = RPSLS;
 			productName = RPS;
-			productReference = EB579BBB25F9007D00F4DD79 /* RPS.app */;
+			productReference = EB579BBB25F9007D00F4DD79 /* RPSLS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB579BB625F9007D00F4DD79 /* Build configuration list for PBXProject "RPS" */;
+			buildConfigurationList = EB579BB625F9007D00F4DD79 /* Build configuration list for PBXProject "RPSLS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB579BBA25F9007D00F4DD79 /* RPS */,
+				EB579BBA25F9007D00F4DD79 /* RPSLS */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +155,8 @@
 			files = (
 				EB579BC325F9007D00F4DD79 /* ViewController.swift in Sources */,
 				EB579BBF25F9007D00F4DD79 /* AppDelegate.swift in Sources */,
+				EB579BDA25F9069100F4DD79 /* GameState.swift in Sources */,
+				EB579BD525F9028F00F4DD79 /* Sign.swift in Sources */,
 				EB579BC125F9007D00F4DD79 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,12 +306,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UG5BZ46HRW;
-				INFOPLIST_FILE = RPS/Info.plist;
+				INFOPLIST_FILE = RPSLS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fouttyappdevelopment.RPS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fouttyappdevelopment.RPSLS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,12 +325,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UG5BZ46HRW;
-				INFOPLIST_FILE = RPS/Info.plist;
+				INFOPLIST_FILE = RPSLS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fouttyappdevelopment.RPS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fouttyappdevelopment.RPSLS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +340,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB579BB625F9007D00F4DD79 /* Build configuration list for PBXProject "RPS" */ = {
+		EB579BB625F9007D00F4DD79 /* Build configuration list for PBXProject "RPSLS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB579BCD25F9007E00F4DD79 /* Debug */,
@@ -331,7 +349,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB579BCF25F9007E00F4DD79 /* Build configuration list for PBXNativeTarget "RPS" */ = {
+		EB579BCF25F9007E00F4DD79 /* Build configuration list for PBXNativeTarget "RPSLS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB579BD025F9007E00F4DD79 /* Debug */,
