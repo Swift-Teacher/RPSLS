@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPSLS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,13 +25,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pRk-SN-hDM">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pRk-SN-hDM">
                                         <rect key="frame" x="0.0" y="66.5" width="285" height="96"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKY-qT-xSo">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                <state key="normal" title="👊🏼"/>
+                                                <state key="normal" title="👊🏼">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="rockChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WS-G9-bAV"/>
                                                 </connections>
@@ -39,7 +41,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5Y-zq-ik2">
                                                 <rect key="frame" x="105" y="0.0" width="75" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                <state key="normal" title="✋🏼"/>
+                                                <state key="normal" title="✋🏼">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="paperChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHZ-4c-ill"/>
                                                 </connections>
@@ -47,7 +51,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cy-XB-ox8">
                                                 <rect key="frame" x="210" y="0.0" width="75" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                <state key="normal" title="✌🏻"/>
+                                                <state key="normal" title="✌🏻">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="scissorChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAZ-Lt-vnX"/>
                                                 </connections>
@@ -60,7 +66,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcq-bL-AeM">
                                                 <rect key="frame" x="0.0" y="0.0" width="122.5" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                <state key="normal" title="🦎"/>
+                                                <state key="normal" title="🦎">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="lizardChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNM-oG-RNu"/>
                                                 </connections>
@@ -68,7 +76,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v70-R7-zJC">
                                                 <rect key="frame" x="162.5" y="0.0" width="122.5" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                                <state key="normal" title="🖖🏼"/>
+                                                <state key="normal" title="🖖🏼">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="spockChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oj4-xV-3jh"/>
                                                 </connections>
@@ -87,7 +97,7 @@
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2B-BS-F4P">
                                 <rect key="frame" x="126" y="104" width="162" height="82"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

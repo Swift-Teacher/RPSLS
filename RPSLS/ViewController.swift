@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         case .start:
             view.backgroundColor = .lightGray
             
-            opponentSignLabel.text = "📱"
+            opponentSignLabel.text = "👨🏻‍💻"
             playAgainButton.isHidden = true
             
             rockButton.isHidden = false
