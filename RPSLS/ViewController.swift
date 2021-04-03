@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var playAgainButton: UIButton!
     
+    // added this so that the computer representation can be any one of these to make UI more fun
+    var opponentPersona = ["👨🏻‍💻", "🤖", "🖥", "😳", "😡", "🥲", "🥷"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +64,7 @@ class ViewController: UIViewController {
         case .start:
             view.backgroundColor = .lightGray
             
-            opponentSignLabel.text = "👨🏻‍💻"
+            opponentSignLabel.text = opponentPersona.randomElement() // makes the opponent a random emoji
             playAgainButton.isHidden = true
             
             rockButton.isHidden = false
@@ -69,7 +72,7 @@ class ViewController: UIViewController {
             scissorButton.isHidden = false
             lizardButton.isHidden = false
             spockButton.isHidden = false
-            
+             
             rockButton.isEnabled = true
             paperButton.isEnabled = true
             scissorButton.isEnabled = true

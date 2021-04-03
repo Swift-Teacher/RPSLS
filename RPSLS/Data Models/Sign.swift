@@ -33,15 +33,15 @@ enum Sign {
     var emoji: String {
         switch self {
         case .rock:
-            return "👊🏼"
+            return "👊"
         case .paper:
-            return "✋🏼"
+            return "✋"
         case .scissors:
-            return "✌🏻"
+            return "✌️"
         case .lizard:
             return "🦎"
         case .spock:
-            return "🖖🏼"
+            return "🖖"
         }
     }
     
@@ -52,9 +52,9 @@ enum Sign {
         
         switch self {
         case .rock:
-            if opponentSign == .scissors {
+            if opponentSign == .lizard {
                 return .win
-            } else if opponentSign == .lizard {
+            } else if opponentSign == .scissors {
                 return .win
             }
         case .paper:
