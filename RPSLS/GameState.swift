@@ -16,11 +16,11 @@ enum GameState {
         case .start:
             return "Rock, Paper, Scissors, Lizard, Spock?"
         case .win:
-            return "You won! 🎉"
+            return "You won! Woo hoo!! 🎉"
         case .lose:
-            return "Sorry you're a loser."
+            return "I'm sorry you are such a loser."
         case .draw:
-            return "It's a draw. Limbo!"
+            return "It's a draw. Oh no, you're in limbo!"
         }
     }
 }

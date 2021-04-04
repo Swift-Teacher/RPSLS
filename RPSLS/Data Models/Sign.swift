@@ -7,6 +7,8 @@
 
 import Foundation
 
+var result = ""
+
 // will generate a random Sign as the computer's choice
 func randomSign() -> Sign {
     let sign = Int.random(in: 0...4)
@@ -53,37 +55,49 @@ enum Sign {
         switch self {
         case .rock:
             if opponentSign == .lizard {
+                result = "Rock crushes lizard"
                 return .win
             } else if opponentSign == .scissors {
+                result = "Rock crushes scissors"
                 return .win
             }
         case .paper:
             if opponentSign == .rock {
+                result = "Paper covers rock"
                 return .win
             } else if opponentSign == .spock {
+                result = "Paper disproves Spock"
                 return .win
             }
         case .scissors:
             if opponentSign == .paper {
+                result = "Scissors cuts paper"
                 return .win
             } else if opponentSign == .lizard {
+                result = "Scissors decapitates lizard"
                 return .win
             }
         case .lizard:
             if opponentSign == .spock {
+                result = "Lizard poisons Spock"
                 return .win
             } else if opponentSign == .paper {
+                result = "Lizard eats paper"
                 return .win
             }
         case .spock:
             if opponentSign == .rock {
+                result = "Spock vaporizes rock"
                 return .win
             } else if opponentSign == .scissors {
+                result = "Spock smashes scissors"
                 return .win
             }
         }
         
+        result = ""
         return .lose
+        
     }
 }
 

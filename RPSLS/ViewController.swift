@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var opponentSignLabel: UILabel!
     @IBOutlet weak var gameStatusLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
@@ -65,7 +66,9 @@ class ViewController: UIViewController {
             view.backgroundColor = .lightGray
             
             opponentSignLabel.text = opponentPersona.randomElement() // makes the opponent a random emoji
+
             playAgainButton.isHidden = true
+            resultLabel.isHidden = true
             
             rockButton.isHidden = false
             paperButton.isHidden = false
@@ -95,6 +98,10 @@ class ViewController: UIViewController {
         updateUI(forState: gameState)
         
         opponentSignLabel.text = computerSign.emoji
+        // adds description of the game result
+        // added per suggestion of Colin K.
+        resultLabel.isHidden = false
+        resultLabel.text = result
         
         rockButton.isHidden = true
         paperButton.isHidden = true

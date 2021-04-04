@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="YhD-yk-eSD">
-                                <rect key="frame" x="236.5" y="290" width="295" height="444.5"/>
+                                <rect key="frame" x="236.5" y="246.5" width="295" height="531"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ae-fb-tym">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="26.5"/>
@@ -85,8 +85,14 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xS-F3-u1r">
+                                        <rect key="frame" x="0.0" y="398.5" width="295" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8z-Bd-XfJ">
-                                        <rect key="frame" x="0.0" y="398.5" width="295" height="46"/>
+                                        <rect key="frame" x="0.0" y="485" width="295" height="46"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="Play Again"/>
                                         <connections>
@@ -96,7 +102,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2B-BS-F4P">
-                                <rect key="frame" x="126" y="136" width="516" height="84"/>
+                                <rect key="frame" x="126" y="92.5" width="516" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -119,6 +125,7 @@
                         <outlet property="opponentSignLabel" destination="W2B-BS-F4P" id="n4h-Xo-Cdo"/>
                         <outlet property="paperButton" destination="l5Y-zq-ik2" id="cw8-9x-6Qc"/>
                         <outlet property="playAgainButton" destination="c8z-Bd-XfJ" id="sgm-qK-BZR"/>
+                        <outlet property="resultLabel" destination="3xS-F3-u1r" id="PSU-Do-mPG"/>
                         <outlet property="rockButton" destination="qKY-qT-xSo" id="6EO-Uf-sbs"/>
                         <outlet property="scissorButton" destination="5cy-XB-ox8" id="a1H-Yr-ubD"/>
                         <outlet property="spockButton" destination="v70-R7-zJC" id="xk7-ug-6mm"/>
