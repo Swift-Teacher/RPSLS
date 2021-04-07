@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Holds the game rule explanation for each outcome in the game. The text is put into the resultLabel.
 var result = ""
 
 // will generate a random Sign as the computer's choice
@@ -49,6 +50,7 @@ enum Sign {
     
     func gameState(against opponentSign: Sign) -> GameState {
         if self == opponentSign {
+            // if it is a draw no explanation is needed
             result = ""
             return .draw
         }
