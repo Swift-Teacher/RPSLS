@@ -49,6 +49,7 @@ enum Sign {
     
     func gameState(against opponentSign: Sign) -> GameState {
         if self == opponentSign {
+            result = ""
             return .draw
         }
         
@@ -60,6 +61,11 @@ enum Sign {
             } else if opponentSign == .scissors {
                 result = "Rock crushes scissors"
                 return .win
+            } else if opponentSign == .paper {
+                result = "Paper covers rock"
+                return .lose
+            } else if opponentSign == .spock {
+                result = "Spock vaporizes rock"
             }
         case .paper:
             if opponentSign == .rock {
@@ -68,6 +74,11 @@ enum Sign {
             } else if opponentSign == .spock {
                 result = "Paper disproves Spock"
                 return .win
+            } else if opponentSign == .scissors {
+                result = "Scissors cut paper"
+                return .lose
+            }  else if opponentSign == .lizard {
+                result = "Lizard eats paper"
             }
         case .scissors:
             if opponentSign == .paper {
@@ -76,6 +87,11 @@ enum Sign {
             } else if opponentSign == .lizard {
                 result = "Scissors decapitates lizard"
                 return .win
+            } else if opponentSign == .spock {
+                result = "Spock smashes scissors"
+                return .lose
+            } else if opponentSign == .rock {
+                result = "Rock crushes scissors"
             }
         case .lizard:
             if opponentSign == .spock {
@@ -84,6 +100,12 @@ enum Sign {
             } else if opponentSign == .paper {
                 result = "Lizard eats paper"
                 return .win
+            } else if opponentSign == .rock {
+                result = "Rock crushes lizard"
+                return .lose
+            } else if opponentSign == .scissors {
+                result = "Scissors decapitates lizard"
+                return .lose
             }
         case .spock:
             if opponentSign == .rock {
@@ -92,12 +114,16 @@ enum Sign {
             } else if opponentSign == .scissors {
                 result = "Spock smashes scissors"
                 return .win
+            } else if opponentSign == .lizard {
+                result = "Lizard poisons Spock"
+                return .lose
+            } else if opponentSign == .paper {
+                result = "Paper disproves Spock"
+                return .lose
             }
         }
-        
         result = ""
         return .lose
-        
     }
 }
 
