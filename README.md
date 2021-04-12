@@ -35,7 +35,9 @@ After we have students think about extending the app and have introduced Rock Pa
     1. Give students the game rules as a text file
     2. Build a game graphic in Keynote using the emoji used in the game
     3. Export the graphic as an image to the .png format 
-    4. Students now need to decide if they want to build two-screen app (where the game rules are displayed on a second screen as image file) or a single view of the game (where the rules are displayed as a label when the UI is updated to show if the player has won, loss, or played to a draw).
+    4. Students now need to decide if they want to build two-screen app 
+    (where the game rules are displayed on a second screen as image file) or 
+    a single view of the game (where the rules are displayed as a label when the UI is updated to show if the player has won, loss, or played to a draw).
 
 ### Apply 
 In this part of the project we build the app.
