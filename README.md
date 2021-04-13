@@ -49,7 +49,7 @@ In this part of the project we build the app.
             1. If the app is put on a physical device the emoji will show a blue line under the emoji. This is because of the Text Color attribute setting in the Attributes Inspector.
             2. Update “Text Color” in the Attributes Inspector to be “Secondary System Fill Color”
     2. Update Sign.swift enum cases and emoji variable to add lizard and Spock
-    3. Don’t need to Update GameState.swift enum because there are still four states of the game: start, win, lose, draw
+    3. Emphasize that we do not need to Update GameState.swift enum because there are still four states of the game: start, win, lose, draw
     4. Update gameState func to include the extra wining comparisons for Rock, Paper, and Scissors. Add comparisons for lizard & Spock
     5. Update randomSign in Sign.swift to include lizard and Spock
     6. Add lizard and Spock buttons in MainStoryboard
