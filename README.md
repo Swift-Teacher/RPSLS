@@ -42,7 +42,7 @@ After we have students think about extending the app and have introduced Rock Pa
 
 ### Apply 
 In this part of the project we build the app.
-    *Note: There is a file in the app with this steps listed below, screenshots of some the specific Attributes Inspector settings, and links to screen recordings of the app creation process.*
+    *Note: There is a RPSLS project PDF file in the app with this steps listed below, screenshots of some the specific Attributes Inspector settings, and links to screen recordings of the app creation process.*
     
     1. Create branch from original RPS app to create Rock Paper Scissors Lizard Spock app
         1. Take original app and put stuff in stack views and add constraints
