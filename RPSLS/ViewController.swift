@@ -17,12 +17,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorButton: UIButton!
+    // #8 add lizard and spock button outlets
     @IBOutlet weak var lizardButton: UIButton!
     @IBOutlet weak var spockButton: UIButton!
     
     @IBOutlet weak var playAgainButton: UIButton!
     
     // added this so that the computer representation can be any one of these to make UI more fun
+    // #17.1 create variable array of emoji
     var opponentPersona = ["👨🏻‍💻", "🤖", "🖥", "😳", "😡", "🥲", "🥷"]
     
     
@@ -44,12 +46,14 @@ class ViewController: UIViewController {
     @IBAction func scissorChosen(_ sender: Any) {
         play(userSign: .scissors)
     }
-    
+    // #9 add IBAction for lizard button
     @IBAction func lizardChosen(_ sender: Any) {
+        // #13 add play() function call for .lizard
         play(userSign: .lizard)
     }
-    
+    // #9 add IBAction for spock button
     @IBAction func spockChosen(_ sender: Any) {
+        // #13 add play() function call for .spock
         play(userSign: .spock)
     }
     
@@ -65,6 +69,7 @@ class ViewController: UIViewController {
         case .start:
             view.backgroundColor = .lightGray
             
+            // #17.2 assign opponentSignLabel.text to be a random element from the variable array of emoji
             opponentSignLabel.text = opponentPersona.randomElement() // makes the opponent a random emoji
 
             playAgainButton.isHidden = true
@@ -73,12 +78,14 @@ class ViewController: UIViewController {
             rockButton.isHidden = false
             paperButton.isHidden = false
             scissorButton.isHidden = false
+            // #10 add lizardButton and spockButton
             lizardButton.isHidden = false
             spockButton.isHidden = false
              
             rockButton.isEnabled = true
             paperButton.isEnabled = true
             scissorButton.isEnabled = true
+            // #10 add lizardButton and spockButton
             lizardButton.isEnabled = true
             spockButton.isEnabled = true
             
@@ -99,19 +106,20 @@ class ViewController: UIViewController {
         
         opponentSignLabel.text = computerSign.emoji
         // adds description of the game result
-        // added per suggestion of Colin K.
         resultLabel.isHidden = false
         resultLabel.text = result
         
         rockButton.isHidden = true
         paperButton.isHidden = true
         scissorButton.isHidden = true
+        // #11 add lizardButton and spockButton
         lizardButton.isHidden = true
         spockButton.isHidden = true
         
         rockButton.isEnabled = false
         paperButton.isEnabled = false
         scissorButton.isEnabled = false
+        // #11 add lizardButton and spockButton
         lizardButton.isEnabled = false
         spockButton.isEnabled = false
         
@@ -122,6 +130,7 @@ class ViewController: UIViewController {
             paperButton.isHidden = false
         case .scissors:
             scissorButton.isHidden = false
+            // #12 add cases for .lizard and .spock
         case .lizard:
             lizardButton.isHidden = false
         case .spock:

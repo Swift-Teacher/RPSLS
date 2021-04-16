@@ -50,38 +50,46 @@ In this part of the project we build the app.
             2. Update “Text Color” in the Attributes Inspector to be “Secondary System Fill Color”
     2. Update Sign.swift enum cases and emoji variable to add lizard and Spock
     3. Emphasize that we do not need to Update GameState.swift enum because there are still four states of the game: start, win, lose, draw
-    4. Update gameState func to include the extra wining comparisons for Rock, Paper, and Scissors. Add comparisons for lizard & Spock
-    5. Update randomSign in Sign.swift to include lizard and Spock
-    6. Add lizard and Spock buttons in MainStoryboard
+    4. Update gameState func to include the extra wining comparisons for Rock, Paper, and Scissors. 
+    5. Add comparisons for lizard & Spock
+    6. Update randomSign in Sign.swift to include lizard and Spock
+    7. Add lizard and Spock buttons in MainStoryboard
         1. Embed in stack view 
         2. Drag into larger stack view
         3. Adjust main stack view spacing
-    7. Create outlets for for lizard and Spock buttons
-    8. Create actions for lizard and Spock buttons
-    9. Update the UpdateUI function in viewController.swift for lizard and Spock
-    10. Update the play function in VC for lizard and Spock
-    11. Add calls to the play function in lizard and Spock IBAction functions
-    12. Game is now complete. Build and run. If everything works Checkout of brach back into main and then merge branches.
-    13. How can we make it better
+    8. Create outlets for for lizard and Spock buttons
+    9. Create actions for lizard and Spock buttons
+    10. Update the UpdateUI function in ViewController.swift for lizard and Spock
+    11. Update the play function in ViewController.swift for lizard and Spock
+    12. Add cases for lizard and spock in userSign switch statement inside of play function
+    13. Add calls to the play function in lizard and Spock IBAction functions
+    14. Game is now complete. Build and run. Will get incorrect emoji chosen for lizard and Spock. Need to fix by deleting rockChosen connection in Connections Inspector.
+    15. Build and run. If everything works Checkout of brach back into main and then merge branches.
+    16. How can we make it better
         1. Make the opponent label randomly choose an emoji from multiple emoji?
         2. Allow the user to see the game rules?
-    14. Create new branch for adding rules 
-    15. Adding the game rules on a second screen version of the app
-        1. Export rules Keynote as an image and save as a png file
-        2. Add a new view con
-        3. Add a button and constraints at bottom to view rules
+    17. Random opponentSignLabel emoji
+        1. Create a variable array of emoji in viewController.swift.
+        2. Assign the opponentSignLabel.text property to be a random element to the variable array in viewController.swift.
+    18. Create new branch for adding rules 
+    19. Adding the game rules on a second screen version of the app
+        1. Export rules Keynote as an image and save as a .png file.
+        2. Add a new View Controller.
+        3. Add a button and constraints at bottom to view rules.
         4. Control-drag and create a show segue to new view controller
         5. Add imageView from Object Library to new view controller
-        6. Drag Keynote image file in assets.xcassets folder
-        7. Choose your Keynote rules image from the image dropdown in the Attributes Inspector for the imageView
-        8. Build and run. If everything works Checkout of brach back into main and then merge branches.
-    16. Adding the game rules as a label within the game version of the app
-        1. Add a label to large stack view named resultLabel
-        2. Add a result variable to ViewController.swift
-        3. Assign result to be empty string for .draw and .lose cases
-        4. Add the two losing cases for each case the user can play
+        6. Drag Keynote image file in assets.xcassets folder.
+        7. Choose your Keynote rules image from the image dropdown in the Attributes Inspector for the imageView.
+        8. Embed the initial viewController in a NavigationController.
+        9. Build and run. If everything works Checkout of brach back into main and then merge branches.
+    20. Adding the game rules as a label within the game version of the app
+        1. Add a new branch.
+        2. Add a label to large stack view named resultLabel.
+        2. Create a result variable to Sign.swift.
+        3. Assign result to be an empty string for .draw and .lose cases.
+        4. Add the two losing cases for each case the user can play.
         5. Build and run. If everything works Checkout of brach back into main and then merge branches.
-    17. Bonus - icon set creation using Keynote and Mac App Store app Icon Set Creator
+    21. Bonus - icon set creation using Keynote and Mac App Store app Icon Set Creator
 
 You can find a write up of my process, sample materials, and screencasts of the process I used at my blog: [Swift Teacher Blog](https://www.swiftteacher.org).
     
