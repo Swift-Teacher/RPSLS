@@ -14,7 +14,11 @@ enum GameState {
     var status: String {
         switch self {
         case .start:
-            return "Rock, Paper, Scissors, Lizard, Spock?"
+            // 17.1 add lizard and spock. Make this a multi-line string. Adjust label to display 2 lines in Atributes Inspector in storyboard.
+            return """
+                Rock, Paper, Scissors,
+                Lizard, Spock?
+                """
         case .win:
             return "You won! Woo hoo!! 🎉"
         case .lose:

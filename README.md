@@ -69,8 +69,9 @@ In this part of the project we build the app.
         1. Make the opponent label randomly choose an emoji from multiple emoji?
         2. Allow the user to see the game rules?
     17. Random opponentSignLabel emoji
-        1. Create a variable array of emoji in viewController.swift.
-        2. Assign the opponentSignLabel.text property to be a random element to the variable array in viewController.swift.
+        1. Update Gamestate.swift status variable start case to include lizard and Spock.
+        2. Create a variable array of emoji in viewController.swift.
+        3. Assign the opponentSignLabel.text property to be a random element to the variable array in viewController.swift.
     18. Create new branch for adding rules 
     19. Adding the game rules on a second screen version of the app
         1. Export rules Keynote as an image and save as a .png file.

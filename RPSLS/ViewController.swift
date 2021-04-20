@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playAgainButton: UIButton!
     
     // added this so that the computer representation can be any one of these to make UI more fun
-    // #17.1 create variable array of emoji
+    // #17.2 create variable array of emoji
     var opponentPersona = ["👨🏻‍💻", "🤖", "🖥", "😳", "😡", "🥲", "🥷"]
     
     
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         case .start:
             view.backgroundColor = .lightGray
             
-            // #17.2 assign opponentSignLabel.text to be a random element from the variable array of emoji
+            // #17.3 assign opponentSignLabel.text to be a random element from the variable array of emoji
             opponentSignLabel.text = opponentPersona.randomElement() // makes the opponent a random emoji
 
             playAgainButton.isHidden = true
