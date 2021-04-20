@@ -13,7 +13,7 @@ var result = ""
 
 // will generate a random Sign as the computer's choice
 func randomSign() -> Sign {
-    let sign = Int.random(in: 0...4) // #6 changed to 4
+    let sign = Int.random(in: 0...4) // #6 changed upper part of range to 4
     if sign == 0 {
         return .rock
     } else if sign == 1 {
