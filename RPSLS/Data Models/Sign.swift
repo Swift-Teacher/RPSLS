@@ -7,9 +7,9 @@
 
 import Foundation
 
-// Holds the game rule explanation for each outcome in the game. The text is put into the resultLabel.
-// #20.3 create result variable that is an empty string
-var result = ""
+// Holds the game rule explanation for each outcome in the game. The text is put into the ruleLabel.
+// #20.3 create a rule variable that is an empty string
+var rule = ""
 
 // will generate a random Sign as the computer's choice
 func randomSign() -> Sign {
@@ -55,92 +55,102 @@ enum Sign {
     func gameState(against opponentSign: Sign) -> GameState {
         if self == opponentSign {
             // if it is a draw no explanation is needed
-            // #20.4 assign result to an empty string
-            result = ""
+            // #20.4 assign rule to an empty string
+            rule = ""
             return .draw
         }
         
         switch self {
         case .rock:
             if opponentSign == .lizard {
-                result = "Rock crushes lizard"
+                // #20.5 assign the corresponding rule
+                rule = "Rock crushes lizard"
                 return .win
             } // #4 add winning against .scissors
             else if opponentSign == .scissors {
-                result = "Rock crushes scissors"
+                // #20.5 assign the corresponding rule
+                rule = "Rock crushes scissors"
                 return .win
-            } // 20.5 add the two losing cases
+            } // // #20.6 add the two losing cases and rules
             else if opponentSign == .paper {
-                result = "Paper covers rock"
+                rule = "Paper covers rock"
                 return .lose
             } else if opponentSign == .spock {
-                result = "Spock vaporizes rock"
+                rule = "Spock vaporizes rock"
             }
         case .paper:
             if opponentSign == .rock {
-                result = "Paper covers rock"
+                // #20.5 assign the corresponding rule
+                rule = "Paper covers rock"
                 return .win
             } // #4 add winning against .spock
             else if opponentSign == .spock {
-                result = "Paper disproves Spock"
+                // #20.5 assign the corresponding rule
+                rule = "Paper disproves Spock"
                 return .win
-            } // 20.5 add the two losing cases
+            } // #20.6 add the two losing cases and rules
             else if opponentSign == .scissors {
-                result = "Scissors cut paper"
+                rule = "Scissors cut paper"
                 return .lose
             }  else if opponentSign == .lizard {
-                result = "Lizard eats paper"
+                rule = "Lizard eats paper"
             }
         case .scissors:
             if opponentSign == .paper {
-                result = "Scissors cuts paper"
+                // #20.5 assign the corresponding rule
+                rule = "Scissors cuts paper"
                 return .win
             } // #4 add winning against .lizard
             else if opponentSign == .lizard {
-                result = "Scissors decapitates lizard"
+                // #20.5 assign the corresponding rule
+                rule = "Scissors decapitates lizard"
                 return .win
-            } // 20.5 add the two losing cases
+            } // // #20.6 add the two losing cases and rules
             else if opponentSign == .spock {
-                result = "Spock smashes scissors"
+                rule = "Spock smashes scissors"
                 return .lose
             } else if opponentSign == .rock {
-                result = "Rock crushes scissors"
+                rule = "Rock crushes scissors"
             }
         // #5 add .lizard case and the two winning comparisons for .spock & .paper
         case .lizard:
             if opponentSign == .spock {
-                result = "Lizard poisons Spock"
+                // #20.5 assign the corresponding rule
+                rule = "Lizard poisons Spock"
                 return .win
             } else if opponentSign == .paper {
-                result = "Lizard eats paper"
+                // #20.5 assign the corresponding rule
+                rule = "Lizard eats paper"
                 return .win
-            } // 20.5 add the two losing cases
+            } // // #20.6 add the two losing cases and rules
             else if opponentSign == .rock {
-                result = "Rock crushes lizard"
+                rule = "Rock crushes lizard"
                 return .lose
             } else if opponentSign == .scissors {
-                result = "Scissors decapitates lizard"
+                rule = "Scissors decapitates lizard"
                 return .lose
             }
         // #5 add .spock case and the two winning comparisons for .rock & .scissors
         case .spock:
             if opponentSign == .rock {
-                result = "Spock vaporizes rock"
+                // #20.5 assign the corresponding rule
+                rule = "Spock vaporizes rock"
                 return .win
             } else if opponentSign == .scissors {
-                result = "Spock smashes scissors"
+                // #20.5 assign the corresponding rule
+                rule = "Spock smashes scissors"
                 return .win
-            } // 20.5 add the two losing cases
+            } // // #20.6 add the two losing cases and rules
             else if opponentSign == .lizard {
-                result = "Lizard poisons Spock"
+                rule = "Lizard poisons Spock"
                 return .lose
             } else if opponentSign == .paper {
-                result = "Paper disproves Spock"
+                rule = "Paper disproves Spock"
                 return .lose
             }
         }
-        // #20.4 assign result to an empty string
-        result = ""
+        // #20.4 assign rule to an empty string
+        rule = ""
         return .lose
     }
 }

@@ -84,13 +84,18 @@ In this part of the project we build the app.
         8. Embed the initial viewController in a NavigationController.
         9. Build and run. If everything works Checkout of brach back into main and then merge branches.
     20. Adding the game rules as a label within the game version of the app
-        1. Add a new branch.
-        2. Add a label to large stack view named resultLabel.
-        2. Create a result variable to Sign.swift.
-        3. Assign result to be an empty string for .draw and .lose cases.
-        4. Add the two losing cases for each case the user can play.
-        5. Build and run. If everything works Checkout of brach back into main and then merge branches.
-    21. Bonus - icon set creation using Keynote and Mac App Store app Icon Set Creator
+        1. Add new branch
+        2. Add a label to large stack view named ruleLabel and set Font to Title 
+        3. Create a rule variable in Sign.swift.
+        4. Assign rule to be an empty string for .draw and .lose cases in Sign.swift.
+        5. Assign rule as a string to each of the existing winning results with the corresponding rule in Sign.swift.
+        6. Assign the appropriate rule as a string and return .lose for each of the losing outcome in Sign.swift.
+        7. Open the Assistant Editor and create the ruleLabel outlet in ViewController.swift.
+        8. Assign ruleLabeL in updateUI function in .start in ViewController.swift to hide the label.
+        9. Assign ruleLabel to be visible in play function.
+        10. Assign the appropriate rule to the ruleLabel’s text property
+        11. Build and run. If everything works Checkout of brach back into main and then merge branches.
+
 
 You can find a write up of my process, sample materials, and screencasts of the process I used at my blog: [Swift Teacher Blog](https://www.swiftteacher.org).
     

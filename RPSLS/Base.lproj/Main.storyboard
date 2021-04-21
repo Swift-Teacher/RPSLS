@@ -87,7 +87,7 @@
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xS-F3-u1r">
                                         <rect key="frame" x="0.0" y="398.33333333333337" width="295" height="26.333333333333314"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -125,8 +125,8 @@
                         <outlet property="opponentSignLabel" destination="W2B-BS-F4P" id="n4h-Xo-Cdo"/>
                         <outlet property="paperButton" destination="l5Y-zq-ik2" id="cw8-9x-6Qc"/>
                         <outlet property="playAgainButton" destination="c8z-Bd-XfJ" id="sgm-qK-BZR"/>
-                        <outlet property="resultLabel" destination="3xS-F3-u1r" id="PSU-Do-mPG"/>
                         <outlet property="rockButton" destination="qKY-qT-xSo" id="6EO-Uf-sbs"/>
+                        <outlet property="ruleLabel" destination="3xS-F3-u1r" id="PSU-Do-mPG"/>
                         <outlet property="scissorButton" destination="5cy-XB-ox8" id="a1H-Yr-ubD"/>
                         <outlet property="spockButton" destination="v70-R7-zJC" id="xk7-ug-6mm"/>
                     </connections>

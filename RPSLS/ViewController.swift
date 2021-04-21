@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var opponentSignLabel: UILabel!
     @IBOutlet weak var gameStatusLabel: UILabel!
-    @IBOutlet weak var resultLabel: UILabel!
+    // #20.7 outlet for the ruleLabel
+    @IBOutlet weak var ruleLabel: UILabel!
     
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
@@ -73,7 +74,8 @@ class ViewController: UIViewController {
             opponentSignLabel.text = opponentPersona.randomElement() // makes the opponent a random emoji
 
             playAgainButton.isHidden = true
-            resultLabel.isHidden = true
+            // #20.8 hides the ruleLabel
+            ruleLabel.isHidden = true
             
             rockButton.isHidden = false
             paperButton.isHidden = false
@@ -106,8 +108,10 @@ class ViewController: UIViewController {
         
         opponentSignLabel.text = computerSign.emoji
         // adds description of the game result
-        resultLabel.isHidden = false
-        resultLabel.text = result
+        // #20.9 makes ruleLabel visible
+        ruleLabel.isHidden = false
+        // #20.10 assigns the appropriate rule text in ruleLabel
+        ruleLabel.text = rule
         
         rockButton.isHidden = true
         paperButton.isHidden = true
