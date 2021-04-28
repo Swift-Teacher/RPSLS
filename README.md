@@ -98,7 +98,7 @@ In this part of the project we build the app.
         11. Build and run. If everything works Checkout of brach back into main and then merge branches.
 
 
-You can find a write up of my process, sample materials, and screencasts of the process I used at my blog: [Swift Teacher Blog](https://www.swiftteacher.org).
+You can find a write up of my process, sample materials, and screencasts of the process I used at my blog: [Swift Teacher Blog](https://www.swiftteacher.org/swift-teacher/2021/4/20/lizard-spock-addition-conundrum).
     
 I created the poject in part using a Creative Commons 3.0 attribution, Non-Commerical license from Sam Kass: [Sam Kass](http://www.samkass.com/theories/RPSSL.html).
 
