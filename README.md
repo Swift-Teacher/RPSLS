@@ -20,12 +20,13 @@ The general process and flow of this project is in the format of an Apple Teache
 ### Activate
 We want our students to activate any prior knowledge on the topic. Since our students have previously made the Rock Paper Scissors app, they will all have some prior knowledge on how the app works. However, the goal of the project is to improve the app and update a functioning app. Here is the activity I use with my students:
 
-    1. Have students play RPS using their hands. Have a person record a video of it using an iPhone or iPad.
-    2. Keep track of the number of ties in the game between the two players.
-    3. Discuss how can we make the game better and result in fewer ties. 
-    4. Highlight that we want to give players more options without too many to remember.
-    5. Discuss five choices - students can draw a pentagon and place emoji at points to map choices
-    6. Introduce RPSLS witH the Big Bang Theory segment discussing game rules.
+    1. You and a partner will play at least ten rounds of Rock Paper Scissors. Have a third person record a video of it using an iPhone or iPad.
+    2. Insert video into the first Numbers sheet tab.
+    3. Record the number of wins for each player and the number of draws (ties) by putting a “1” in the correct cell.
+    4. Using the Results sheet in the next tab, determine the percentage of ties that occurred.
+    5. Discuss how can we make the game better and result in fewer draws (ties).
+    6. Discuss five choices - draw a pentagon and place emoji at points to map choices.
+    7. Watch and learn about Rock Paper Scissors Lizard Spock in this Big Bang Theory segment from YouTube.
 
 ⚛️ [Big Bang Theory video discussing game rules](https://www.youtube.com/watch?v=x5Q6-wMx-K8) ⚛️
 

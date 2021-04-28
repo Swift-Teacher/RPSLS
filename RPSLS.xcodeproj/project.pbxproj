@@ -18,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB3CB1CE2631D46C003F3E18 /* RPSLS Project.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "RPSLS Project.pdf"; sourceTree = "<group>"; };
 		EB579BBB25F9007D00F4DD79 /* RPSLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPSLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB579BBE25F9007D00F4DD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB579BC025F9007D00F4DD79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		EB579BD325F901C900F4DD79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EB579BD425F9028F00F4DD79 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
 		EB579BD925F9069100F4DD79 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameState.swift; path = RPSLS/GameState.swift; sourceTree = SOURCE_ROOT; };
+		EBADD7382639AA7C0022664E /* RPSLS Project.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "RPSLS Project.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 		EB579BB225F9007D00F4DD79 = {
 			isa = PBXGroup;
 			children = (
-				EB3CB1CE2631D46C003F3E18 /* RPSLS Project.pdf */,
+				EBADD7382639AA7C0022664E /* RPSLS Project.pdf */,
 				EB579BD325F901C900F4DD79 /* README.md */,
 				EB579BBD25F9007D00F4DD79 /* RPSLS */,
 				EB579BBC25F9007D00F4DD79 /* Products */,
