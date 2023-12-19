@@ -111,6 +111,7 @@ enum Sign {
                 return .lose
             } else if opponentSign == .rock {
                 rule = "Rock crushes scissors"
+                return .lose
             }
         // #5 add .lizard case and the two winning comparisons for .spock & .paper
         case .lizard:
