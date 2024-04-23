@@ -46,7 +46,7 @@ enum Sign {
             return "✌️"
             // #2 add cases .lizard and .spock
         case .lizard:
-            return "🦎"
+            return "🤏"
         case .spock:
             return "🖖"
         }
