@@ -36,16 +36,20 @@ We want our students to activate any prior knowledge on the topic. Since our stu
     5. Discuss how can we make the game better and result in fewer draws (ties).
     6. Discuss five choices - draw a pentagon and place emoji at points to map choices.
     7. Watch and learn about Rock Paper Scissors Lizard Spock in this Big Bang Theory segment from YouTube.
+    8. You and a partner will now play at least ten rounds of Rock Paper Scissors Lizard Spock. Have a third person record the outcomes of each round.
+    9. Record the number of wins for each player and the number of draws (ties) by putting a "1" in the correct cell.
+    10. Using the table on the last page, determine the percentage of ties that occurred. Determine the number of choices for each player, then computer the total number of outcomes for two players, three players, four players. 
+
 
 ⚛️ [Big Bang Theory video discussing game rules](https://www.youtube.com/watch?v=x5Q6-wMx-K8) ⚛️
 
 ### Explore
 After we have students think about extending the app and have introduced Rock Paper Scissors Lizard Spock as a solution, we now want our students to either accept RPSLS as the solution they are going to build or build a similar app that has five choices that uses five different emoji as the player choices.
 
-    1. Give students the game rules as a text file
-    2. Build a game graphic in Keynote using the emoji used in the game
-    3. Export the graphic as an image to the .png format 
-    4. Students should now consider if they want to build two-screen app 
+    1. Give students the game rules as a text file.
+    2. Pseudocode the algorithm for the new randomSign & GameState (Hint: refer to the Sign.swift file for the in the original RPS game for the original algorithm as a guide).
+    3. Export the graphic as an image to the .png format.
+    4. Students should now consider if they want to build two-screen app
     (where the game rules are displayed on a second screen as image file) or 
     a single view of the game (where the rules are displayed as a label when 
     the UI is updated to show if the player has won, loss, or played to a draw).
